@@ -7,7 +7,7 @@ TOKEN=""
 
 printf "What is the name of your repo : "
 
-printf "Commit message : "
+printf "Description of your git repo : "
 
 curl -u $USERNAME:$TOKEN https://api.github.com/user/repos -d '{"name":"'"$REPO_NAME"'","description":"'"$DESCRIPTION"'","private":true}'
 
